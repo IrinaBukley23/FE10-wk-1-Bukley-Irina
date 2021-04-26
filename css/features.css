@@ -1,0 +1,26 @@
+.features{
+    padding: 126px 0 49px 0;
+}
+
+.features-icon{
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.features-title{
+    color:#2D3033;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.features-descr{
+    color:#6C7279;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.875rem;
+    text-align: center;
+    margin-bottom: 74px;
+}

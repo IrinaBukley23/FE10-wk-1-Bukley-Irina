@@ -1,0 +1,13 @@
+@import url(../css/header.css);
+@import url(../css/masthead.css);
+@import url(../css/features.css);
+@import url(../css/works.css);
+@import url(../css/team.css);
+@import url(../css/clients.css);
+@import url(../css/downloads.css);
+@import url(../css/footer.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
