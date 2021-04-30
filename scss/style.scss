@@ -1,0 +1,18 @@
+$white: #FFFFFF;
+$orange: #E84545;
+$grey: #2D3033;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'header.scss';
+@import 'masthead.scss';
+@import 'features.scss';
+@import 'works.scss';
+@import 'team.scss';
+@import 'clients.scss';
+@import 'downloads.scss';
+@import 'footer.scss';

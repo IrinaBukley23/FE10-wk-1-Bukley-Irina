@@ -1,0 +1,73 @@
+.header{
+    width: 100%;
+    position: fixed;
+	top: 0;
+    left: 0;
+    z-index: 999;
+    @media(max-width: 992px){
+        
+    }
+}
+
+.navbar-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px $white solid;
+    padding: 38px 0;
+    @media(max-width: 992px){
+        padding: 20px 0;
+    }
+    &-brand{
+        @media (max-width: 576px){
+            width: 50%;   
+        }
+        img{
+            @media (max-width: 576px){
+                width: 100%;
+            }
+        }
+    }
+}
+
+.menu-block{
+    @media(max-width: 992px){
+        text-align: end;
+    }
+}
+
+.navbar-toggler{
+    border: none;
+
+}
+
+.nav-item{
+    margin-right: 3.6rem;
+    @media(max-width: 992px){
+        text-align: right;
+        margin-right: 0;
+    }
+    .nav-link {
+        opacity: 0.75;
+        color: $white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        transition: .3s ease-in-out;
+        transform: translateX(-50%);
+        border-bottom: 2px solid transparent;
+        &:hover{
+            border-bottom: 2px solid $white;
+        }
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.fas{
+    color: $white;
+    vertical-align: middle;
+    width: 30px;
+}

@@ -1,0 +1,40 @@
+.downloads{
+    padding: 100px 0;
+    text-align: center;
+    @media (max-width: 992px){
+        padding: 75px 0;
+    }
+    @media (max-width: 576px){
+        padding: 0 0 50px 0;  
+    }
+    &-title{
+        margin-bottom: 16px;
+        color: $grey;
+        font-family:'Raleway', sans-serif;
+        font-size:28px;
+        text-transform: capitalize;
+    }
+    &-text{
+    margin-bottom: 60px;
+    color: $grey;
+    font-family: 'Raleway', sans-serif;
+    font-size:13px;
+    text-transform: uppercase;
+    }
+    &-link{
+        text-decoration: none;
+        padding: 20px 85px;
+        background-color: $orange;
+        border: none;
+        color: $white;
+        font-family: 'Raleway', sans-serif;
+        font-size:13px;
+        text-transform: uppercase;
+        transition: ease-out .2s;
+        &:hover{
+            border: 3px solid $orange;
+            color: $orange;
+            background-color: $white;
+        }
+    }
+}

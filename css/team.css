@@ -1,18 +1,52 @@
-.team{
-    padding: 97px 0;
+.team {
+  padding: 97px 0;
 }
-.social-block{
-    height: 41px;
+@media (max-width: 992px) {
+  .team {
+    padding: 75px 0;
+  }
 }
-.social-list{
-    list-style: none;
-    display: flex;
-    height: 41px;
+@media (max-width: 576px) {
+  .team {
+    padding: 50px 0;
+  }
+}
+.team-photo {
+  margin-bottom: 30px;
+}
+.team-photo img {
+  width: 100%;
+}
+.team-name {
+  color: #2D3033;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.team-role {
+  margin-bottom: 29px;
+  color: #E84545;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.team-text {
+  color: #6C7279;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
 }
 
-.fab{
-    font-size: 1.4rem;
-    font-weight: 600;
-    font-family: "Font Awesome 5 Free";
-    color: green;
+.social-block {
+  height: 41px;
+}
+.social-block .social-list {
+  list-style: none;
+  display: flex;
+  height: 41px;
+}
+.social-block .social-list .fab {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  color: green;
 }

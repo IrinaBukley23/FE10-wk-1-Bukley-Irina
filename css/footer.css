@@ -1,0 +1,21 @@
+.footer-top {
+  background-color: #3A3E64;
+}
+.footer-top__title {
+  margin-bottom: 22px;
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer-top__text {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-bottom {
+  background-color: #313454;
+}
