@@ -96,9 +96,6 @@
 .client-slider{
     position: relative;
     padding-right: 0;
-    @media (max-width: 768px){
-        height: 576px;
-    }
     .slick-dots{
         display: flex;
         position: absolute;

@@ -157,6 +157,7 @@
   text-transform: uppercase;
   text-decoration: none;
   transition: ease-out 0.2s;
+  border: 3px solid transparent;
 }
 .masthead-link:hover {
   border: 3px solid #E84545;
@@ -449,11 +450,6 @@
   position: relative;
   padding-right: 0;
 }
-@media (max-width: 768px) {
-  .client-slider {
-    height: 576px;
-  }
-}
 .client-slider .slick-dots {
   display: flex;
   position: absolute;
@@ -489,7 +485,7 @@
 }
 @media (max-width: 576px) {
   .downloads {
-    padding: 0 0 50px 0;
+    padding: 50px 0;
   }
 }
 .downloads-title {
@@ -515,12 +511,18 @@
   font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-transform: uppercase;
+  border: 3px solid transparent;
   transition: ease-out 0.2s;
 }
 .downloads-link:hover {
   border: 3px solid #E84545;
   color: #E84545;
   background-color: #FFFFFF;
+}
+@media (max-width: 576px) {
+  .downloads-link {
+    padding: 20px 70px;
+  }
 }
 
 .footer-top {

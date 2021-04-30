@@ -5,7 +5,7 @@
         padding: 75px 0;
     }
     @media (max-width: 576px){
-        padding: 0 0 50px 0;  
+        padding: 50px 0;  
     }
     &-title{
         margin-bottom: 16px;
@@ -30,11 +30,15 @@
         font-family: 'Raleway', sans-serif;
         font-size:13px;
         text-transform: uppercase;
+        border: 3px solid transparent;
         transition: ease-out .2s;
         &:hover{
             border: 3px solid $orange;
             color: $orange;
             background-color: $white;
+        }
+        @media (max-width: 576px){
+            padding: 20px 70px;
         }
     }
 }
