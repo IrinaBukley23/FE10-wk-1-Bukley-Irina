@@ -1,7 +1,7 @@
 .masthead{
     background: url('../img/bg/header-bg.jpg') no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+    background-size: cover;
+    background-position: top left;
     padding: 250px 0 157px 0;
     text-align: center;
     position: relative;
@@ -9,7 +9,7 @@
         padding: 155px 0 100px 0;
     }
     @media (max-width: 576px){
-        padding: 155px 0 75px 0;
+        padding: 110px 0 75px 0;
         
     }
     &::after{

@@ -18,15 +18,26 @@
     }
     &-photo{
         margin-bottom: 30px;
+        @media (max-width: 576px){
+            width: 70%;
+            margin: 0 auto 30px;
+        }
         img{
             width: 100%;
+            @media (max-width: 576px){
+                overflow: hidden;
+                border-radius: 50%;
+            }
         }
     }
     &-name{
         color: $grey;
         font-family: 'Raleway', sans-serif;
         font-size: 22px;
-        text-transform: capitalize;;
+        text-transform: capitalize;
+        @media (max-width: 576px){
+           text-align: center;
+        }
     }
     &-role{
         margin-bottom: 29px;
@@ -34,16 +45,25 @@
         font-family: 'Raleway', sans-serif;
         font-size: 13px;
         text-transform: uppercase;
+        @media (max-width: 576px){
+            text-align: center;
+         }
     }
     &-text{
         color:#6C7279;
         font-family: 'Raleway', sans-serif;
         font-size: 14px;
+        @media (max-width: 576px){
+            text-align: center;
+         }
     }
     .social-list{
         padding-left: 0;
         display: flex;
         list-style: none;
+        @media (max-width: 576px){
+            justify-content: center;
+         }
         &_item{
             margin-right: 6px;
             border: 2px solid #C6CACC;

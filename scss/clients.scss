@@ -2,26 +2,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 450px;
     @media (max-width: 768px){
+        min-height: 210px;
         width: 100%;
         display: block;
     }
     &__photo{
-        width: 50%;
-        height: 100%;
-        @media (max-width: 1024px){
-            width: 70%;
-        }
+        min-height: 450px;
+        position: relative;
+        flex: 0 0 50%;
         @media (max-width: 768px){
-         width: 100%;
-         height: auto;
+            min-height: 210px;
         }
         img{
             width: 100%;
             height: 100%;
-            @media (max-width: 992px){
-                height: 100%;
-            }
+            object-fit: cover;
+            object-position: top;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     }
     &__descr{
@@ -34,7 +35,6 @@
         padding-left: 86px;
         @media (max-width: 1024px){
             padding: 0 50px;
-            width: 40%;
         }
 
         @media (max-width: 768px){
@@ -95,13 +95,13 @@
 
 .client-slider{
     position: relative;
-    padding-right: 0;
+    z-index: 5;
     .slick-dots{
         display: flex;
         position: absolute;
-        top: 82%;
-        left: 64%;
-        z-index: 1000;
+        top: 84%;
+        left: 65%;
+        z-index: 999;
         li{
             list-style: none;
             margin: 0 7px;
@@ -117,6 +117,34 @@
             opacity: 0.5;
             border-radius: 50%;
             border: none;
+            background-color: $white;
         }
     }
+}
+
+.dots-block{
+    width: 100%;
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            list-style: none;
+            margin: 0 7px;
+            &.slick-active button{
+                opacity: 1;
+            }
+        }
+        button{
+            font-size: 0;
+            width: 13px;
+            height: 13px;
+            color: $white;
+            opacity: 0.5;
+            border-radius: 50%;
+            border: none;
+            background-color: #808080;
+        }
+    }
+
 }
